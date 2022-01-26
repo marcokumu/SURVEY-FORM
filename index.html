@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--SURVEY FORM TITLE-->
+    <h1 id="title">MORINGA STUDENTS FORM FILES</h1>
+    
+    <!--DESCRIPTION-->
+    <p id="description">Thank you very much for filling this form. Your feedback is appreciated by everyone in this institution.</p>
+    <form id="survey-form">
+
+        <!--NAME-EMAIL-NUMBER FIELD FORMS-->
+
+        <!--NAME FIELD-->
+       <div class="fields">
+        <label for="name" id="name-label"> Name</label> <br>
+<input type="text" placeholder="Enter your name" id="name" name="name" required>
+       <br>
+<!--EMAIL FIELD-->      
+        <label for="email" id="email-label"> Email</label> <br>
+<input type="email" placeholder="Enter your email" id="email" name="email" required>
+      <br>
+<!--NUMBER FIELD-->
+     <label for="number" id="number-label"> Age</label> <br>
+<input type="number" placeholder="Enter your number" id="number" name="number"
+    min="11" max="99"
+    </div> 
+<br> <br>
+
+<div class="form-control">
+<!--DROPDOWN-->
+<label for="role" id="label-role">
+    Which option best describes you?
+</label>
+ 
+<!-- Dropdown options -->
+<select name="role" id="dropdown">
+    <option value="student">Student</option>
+    <option value="intern">Intern</option>
+    <option value="professional">
+        Professional
+    </option>
+    <option value="other">Other</option>
+</select>
+</div>
+    <!--RADIO BUTTONS-->
+
+    <fieldset>
+        <!--RADIO BUTTON FOR FEMALE-->
+        <legend>What is your gender?</legend>
+    <label for="female">
+        <input id="female" value="indoor" type="radio" name="female-male">Female
+      </label>
+      
+      <!--RADIO BUTTON FOR MALE-->
+      <label for="male">
+        <input id="male" value="male" type="radio" name="female-male">Male
+    </fieldset>
+        <br>
+      <fieldset class="checkbox">
+        <!--CHECKBOXES-->
+        
+        <legend><label>Languages and Frameworks known
+         </legend>   <br><small>(Check all that apply)</small>
+        </label> 
+        <br>
+        <label for="java"><input id="java" type="checkbox" value="java" name="languages"> Java</label>
+        <label for="python"><input id="python" type="checkbox" value="python" name="languages"> Python</label>
+        <label for="javascript"><input id="javascript" type="checkbox" value="javascript" name="languages"> Javascript</label>
+        <label for="html"><input id="html" type="checkbox" value="html" name="languages"> HTML</label>
+        <label for="css"><input id="css" type="checkbox" value="css" name="languages"> CSS</label>
+        </fieldset>
+
+             <br>
+        <label for="comment">
+            Any comments or suggestions
+        </label>
+        <br>
+        <!-- any aditional comments -->
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+        <br>
+    <!--SUBMIT BUTTON-->
+    <button type="submit" id="submit">Submit </button>
+    </form>
+</body>
+</html>
